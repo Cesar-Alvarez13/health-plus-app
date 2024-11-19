@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+//Hola
 import 'core/app_export.dart';
 
 void main() {
@@ -20,16 +20,14 @@ class MyApp extends StatelessWidget {
   // a@gmail.com
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(statusBarColor: Colors.transparent,statusBarIconBrightness:Brightness.dark));
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark));
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme.copyWith(
-        dialogTheme: DialogTheme(
-          backgroundColor:Colors.white,
-          elevation: 0
-        )
-      ),
+          dialogTheme:
+              DialogTheme(backgroundColor: Colors.white, elevation: 0)),
       translations: AppLocalization(),
       locale: Get.deviceLocale, //for setting localization strings
       fallbackLocale: Locale('en', 'US'),
